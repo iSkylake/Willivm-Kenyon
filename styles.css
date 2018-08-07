@@ -8,6 +8,15 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 }
 
+ul {
+	list-style-type: none;
+}
+
+.main-container {
+	display: flex;
+	height: 100%;
+}
+
 .header {
 	background: url("img/WK-SHQ.jpg");
 	/*background: url("img/WK-H.jpg");*/
@@ -63,7 +72,113 @@ html, body {
 	color: #fff;
 	margin-right: 10px;
 	font-size: 120%;
-	padding: 5px;
+	/*padding: 5px;*/
 	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 40px;
+	transition: all 0.6s;
+	border-radius: 50%;
 	/*border: 2px #fff solid;*/
+}
+
+.social-media i:hover {
+	background-color: #FFF;
+	color: #000;
+}
+
+/* NAVBAR */
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	/*border-right: 3px #000 solid;*/
+	font-size: 0.8rem;
+	height: 100%;
+	box-sizing: border-box;
+	/*background-color: #f9f9f9;*/
+	/*background-color: #7a7a7a;*/
+	/*color: #FFF;*/
+	background-color: #FFF;
+	/*box-shadow: 3px 0 5px -1px #000;*/
+}
+
+.logo {
+	margin-bottom: 100px;
+	font-weight: 700;
+}
+
+.navbar .logo, .navbar ul li {
+	padding: 15px;
+}
+
+.navbar ul {
+	color: #999;
+}
+
+/* PORTFOLIO */
+
+/* IMG SLIDE */
+
+.img-slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/*background-color: #f9f9f9;*/
+}
+
+.fake-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:  url("https://instagram.fsnc1-1.fna.fbcdn.net/vp/ac94d62487781ceb26a1581863ea50b0/5C0CF4C8/t51.2885-15/e35/37750617_2437303776495976_5040474177207795712_n.jpg");
+	/*background: url(https://instagram.fsnc1-1.fna.fbcdn.net/vp/eb17c49a6047d2b86b3ed0507e8d7e39/5BF6ADA3/t51.2885-15/e35/37384188_501602626957905_2061976857795887104_n.jpg);*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(7px) grayscale(70%);
+}
+
+.random-image {
+	max-width: 50%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: #636363 3px 3px 5px;
+}
+
+/* MOBILE */
+
+.mobile-nav {
+	display: none;
+	height: 80px;
+	width: 100%;
+	background-color: #7a7a7a;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.3rem;
+	line-height: 80px;
+}
+
+@media (max-width: 800px) {
+	.navbar {
+		display: none;
+	}
+
+	.random-image {
+		max-width: 90%;
+	}
+
+	.mobile-nav {
+		display: block;
+	}
+
+	.main-container {
+		flex-direction: column;
+	}
 }
