@@ -316,3 +316,17 @@ a{
 		opacity: 1;
 	}
 }
+
+/* LIFE STORIES */
+
+.img-wrapper {
+	width: 25%;
+	height: auto;
+}
+
+.img-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
+
