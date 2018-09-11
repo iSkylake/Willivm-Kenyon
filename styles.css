@@ -111,7 +111,7 @@ a{
 	flex-direction: column;
 	width: 270px;
 	/*border-right: 3px #000 solid;*/
-	font-size: 0.8rem;
+	font-size: 0.95rem;
 	height: 100%;
 	box-sizing: border-box;
 	/*background-color: #f9f9f9;*/
@@ -319,14 +319,15 @@ a{
 
 /* LIFE STORIES */
 
-.img-wrapper {
-	width: 25%;
-	height: auto;
+.stories-col {
+	width: 30%;
+	display: inline-block;
+	margin-right: 5px;
 }
 
-.img-wrapper img {
+.stories-col img {
 	max-width: 100%;
-	height: auto;
+	/*margin-bottom: 5px;*/
 }
 
 
