@@ -208,6 +208,7 @@ a{
 	height: auto;
 	background-color: #303030;
 	position: relative;
+	overflow: hidden;
 }
 
 .story h2 {
@@ -228,6 +229,7 @@ a{
 
 .story:hover img{
 	opacity: 0.2;
+	transform: scale(1.1);
 }
 
 .story:hover h2 {
